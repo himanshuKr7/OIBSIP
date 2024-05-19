@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+.hero-container{
+   display: flex;
+}
+.left-container{
+   background-color: #262525;
+   width: 70%;
+   height: 100vh;
+   padding-left: 3rem;
+   display: flex;
+   align-items: center;
+}
+.right-container{
+   background:linear-gradient(-45deg,#2667f1,#262525 70%);
+   width: 30%;
+   height: 100vh;
+
+}
+.icon .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+.intro span{
+    color: #5DB9EE;
+}
+.content h1{
+    font-size: 4rem;
+    color: #1a9eeb;
+}
+.details{
+    color: #fff;
+    font-size: 1.1 rem;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+button:nth-child(1)
+{
+    background-color: #5DB9EE;
+    color: #262525;
+}
+button:nth-child(2)
+{
+    background-color: #262525;
+    color:#5DB9EE;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background-color: #262525;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover
+{
+background-color: #5DB9EE;
+    color: #262525;
+}
+.icon .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.circle:nth-child(1)
+{
+    background:linear-gradient(90deg,transparent 50%,#262525 50%);
+    width:25rem;
+}
+.circle:nth-child(2)
+{
+    background-image: url(./images/profile.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20rem;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #968d8d, 0 0 2rem #3877FF,inset 0 0 2rem #3877FF;
+}
