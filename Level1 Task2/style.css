@@ -10,6 +10,7 @@ html,body{
     width: 100%;
 }
 .portfolio-container{
+    background: linear-gradient(#2667f1, #262525 70%);
     min-height: 100vh;
     width: 100%;
 }
@@ -151,4 +152,33 @@ background-color: #5DB9EE;
     background-repeat: no-repeat;
     width: 20rem;
     box-shadow: 0 0 1rem #fff, inset 0 0 1rem #968d8d, 0 0 2rem #3877FF,inset 0 0 2rem #3877FF;
+}
+.detailscontainer{
+    background: linear-gradient(#2667f1, #262525 70%); 
+    color: #fff;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about,
+#projects,#skill
+#contact {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
