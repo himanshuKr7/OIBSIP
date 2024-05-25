@@ -97,7 +97,7 @@ ul{
 }
 .nav-links ul{
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: end;
     gap: 2em;
 }
@@ -204,7 +204,7 @@ ul{
 {
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: -30px;
 }
 .big-feature-container
@@ -217,7 +217,7 @@ ul{
     flex-direction: row-reverse;
 }
 .big-feature-img img{
-    width: 100%;
+    width: 100%; 
 }
 .big-feature-text{
     display: flex;
