@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +18,19 @@ html,body{
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
+}
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 20px 35px;
+}
+p{
+    font-family: 'Lato';
+    line-height: 1.5;
+}
+a{
+    text-decoration:none;
+    color:var(--pure);
 }
 
      /*Utility Class*/
@@ -62,13 +75,20 @@ header{
    background-color: var(--dark);
    clip-path: polygon(0 0,100% 0,100% 100%,60% 90%,0 100%);
 }
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.section-heading h1 span{
+   color: var(--primary);
+}
+.section-heading h1{
+    margin-bottom: 1rem;
+}
 
          /* navbar */
-.container{
-    width: 1150px;
-    margin: 0 auto;
-    padding: 20px 35px;
-}
+
 
 nav .left a{
     text-decoration: none;
@@ -134,4 +154,202 @@ nav .left{
 .hero-txt p{
     line-height: 1.9;
     margin-bottom:2rem;
+}
+section{
+    padding: 6rem 0;
+}
+.aboutimg img{
+    width: 450px;
+    height: 450px;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5rem;
+}
+.aboutimg .about-txt{
+    /* width: 50%; */
+}
+.about-txt h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.about-txt span{
+    color: var(--primary);
+}
+.about-txt h3{
+    font-size: 1rem;
+    margin-bottom:1rem ;
+    font-weight: 600;
+}
+.about-txt p{
+    font-family: 'Lato';
+    color: var(--ternary);
+    line-height: 1.7;
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    font-size:1.8rem;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.icons i:hover
+{
+    color: var(--primary);
+}
+
+.cardconatiner
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 2rem;
+}
+.Services{
+    background: var(--light);
+}
+
+.cardconatiner{
+    /* background: var(--light); */
+}
+ .Services .card{
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    background: var(--pure);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.Services .card img{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+ .Services .card:hover{
+    background: var(--dark);
+    color: var(--pure);
+}
+.card h2{
+    margin-bottom:1.5rem;
+}
+.freelancer{
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/work.avif);
+    background-size: cover;
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.Projects{
+    /* background: var(--light); */
+}
+
+.Projects .cardconatiner .card{
+    max-width: 100%;
+    height: 500px;
+    background: var(--light);
+}
+.proimg{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    position: relative;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:1rem;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+.card-txt p{
+    font-family: 'Lato';
+    color: var(--secondary);
+    line-height: 1.5;
+}
+.card-txt h1{
+    color: var(--secondary);
+}
+.Contact{
+    background: var(--light);
+}
+.Contact .cardconatiner .card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5rem;
+}
+.Contact .cardconatiner .card h3{
+    font-size: 1rem;
+    margin-bottom: -2rem;
+}
+.Contact .cardconatiner .card h6{
+    color: var(--ternary);
+}
+.Contact .cardconatiner .card i{
+    font-size: 2rem;
+}
+.Contact .inputcontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.Contact .inputcontainer2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.85rem;
+}
+textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.85rem;
+}
+.btn-Wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+form{
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    color: var(--pure);
+    text-align: center;
+    padding: 2rem 0;
+}
+.icons1{
+   margin: 1.5rem 0;
+}
+.icons1 i{
+   font-size: 2rem;
+   margin:0 1rem;
+}
+.Copyright{
+    color: var(--ternary);
 }
