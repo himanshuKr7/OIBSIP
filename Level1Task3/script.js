@@ -27,5 +27,5 @@ function convertTemperature() {
             return;
     }
 
-    resultDiv.textContent = `Converted Temperature: ${convertedTemperature}`;
+    resultDiv.textContent = `${convertedTemperature}`;
 }
