@@ -10,9 +10,25 @@
 			rel="stylesheet" />
 	</head>
 	<body>
-		<header id="Home">
-			<div class="container">
-				<nav>
+		<div class="main-wrapper">
+			<button class="hamburger">
+				<img src="./images/menu-line.svg" alt="">
+			</button>
+			<div class="mobile-nav">
+				<button class="times">
+					<img src="./images/circle-xmark-regular.svg" alt="">
+				</button>
+				<ul>
+					<li><a class="navigation" href="#Home">Home</a></li>
+					<li><a class="navigation" href="#About">About</a></li>
+					<li><a class="navigation" href="#Skills">Skills</a></li>
+					<li><a class="navigation" href="#Projects">Projects</a></li>
+					<li><a class="navigation" href="#Contact">Contact</a></li>
+				</ul>
+			</div>
+			<header id="Home">
+			<div class="container"> 
+				<nav id="main-nav">
 					<div class="left">
 						<div class="logo">
 							<img src="./images/logo.png" alt="logo" />
@@ -255,5 +271,7 @@
 				Copyright 2024 &copy; Himanshu Kumar.All Right Reserved
 			</div>
 		</footer>
-	</body>
+		</div>
+		<script src="script.js"></script>
+	</body>	
 </html>
